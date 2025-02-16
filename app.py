@@ -4,7 +4,6 @@ import streamlit as st
 import pandas as pd
 import json
 from datetime import datetime
-import matplotlib.pyplot as plt
 from openai import OpenAI
 from PIL import Image
 import requests
@@ -12,7 +11,6 @@ from io import BytesIO
 
 
 
-from mental_health_tools import generate_journaling_prompt
 
 # Initialize the OpenAI client
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
